@@ -476,13 +476,14 @@ a {
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
+    gap: 35px;
 }
 
 .footer-end .footer-item {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    gap: 30px;
+    gap: 20px;
 }
 
 .footer-end .footer-item ul {
