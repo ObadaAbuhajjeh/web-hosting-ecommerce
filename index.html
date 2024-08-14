@@ -1,0 +1,1060 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="./main.css">
+</head>
+
+<body>
+
+
+
+
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-secondary fixed-top">
+            <div class="container">
+                <div class="logo">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="20" width="20"
+                        viewBox="0 0 384 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                        <path fill="#0000ff"
+                            d="M14 95.8C14 42.9 56.9 0 109.8 0H274.2C327.1 0 370 42.9 370 95.8C370 129.3 352.8 158.8 326.7 175.9C352.8 193 370 222.5 370 256C370 308.9 327.1 351.8 274.2 351.8H272.1C247.3 351.8 224.7 342.4 207.7 326.9V415.2C207.7 468.8 163.7 512 110.3 512C57.5 512 14 469.2 14 416.2C14 382.7 31.2 353.2 57.2 336.1C31.2 319 14 289.5 14 256C14 222.5 31.2 193 57.2 175.9C31.2 158.8 14 129.3 14 95.8zM176.3 191.6H109.8C74.2 191.6 45.4 220.4 45.4 256C45.4 291.4 74 320.2 109.4 320.4C109.5 320.4 109.7 320.4 109.8 320.4H176.3V191.6zM207.7 256C207.7 291.6 236.5 320.4 272.1 320.4H274.2C309.7 320.4 338.6 291.6 338.6 256C338.6 220.4 309.7 191.6 274.2 191.6H272.1C236.5 191.6 207.7 220.4 207.7 256zM109.8 351.8C109.7 351.8 109.5 351.8 109.4 351.8C74 352 45.4 380.8 45.4 416.2C45.4 451.7 74.6 480.6 110.3 480.6C146.6 480.6 176.3 451.2 176.3 415.2V351.8H109.8zM109.8 31.4C74.2 31.4 45.4 60.2 45.4 95.8C45.4 131.4 74.2 160.2 109.8 160.2H176.3V31.4H109.8zM207.7 160.2H274.2C309.7 160.2 338.6 131.4 338.6 95.8C338.6 60.2 309.7 31.4 274.2 31.4H207.7V160.2z" />
+                    </svg>
+                    <a class="navbar-brand" href="#">Bluehost</a>
+                </div>
+
+                <div class="dark-mode">
+                    <button class="darkBtn">Dark mode</button>
+                    <button class="lightBtn">Light mode</button>
+                </div>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About Us</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Region
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">USD</a></li>
+                                <li><a class="dropdown-item" href="#">EUR</a></li>
+                                <li><a class="dropdown-item" href="#">AUD</a></li>
+                                <li><a class="dropdown-item" href="#">CAD</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div id="carouselExampleCaptions" class="carousel slide vh-100">
+            <div class="carousel-inner h-100">
+                <div class="carousel-item d-flex flex-column justify-content-center align-items-center active h-100 text-white"
+                    style="background-image: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)), url(./img/header/header.png);">
+                    <div class="carousel-caption h-100 d-flex justify-content-center align-items-center">
+                        <div class="header-img">
+                            <h4>Web hosting</h4>
+                            <h1>Building your own website just got easier.</h1>
+                            <p>With Bluehost web hosting, you get all the features, tools, and guidance you need to
+                                build and launch truly impressive WordPress websites.</p>
+                            <button class="btn btn-outline-main"><a href="#">view plans</a></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </header>
+
+    <main>
+        <div class="container">
+            <section class="bring-website d-flex flex-column justify-content-center align-items-center p-4">
+                <h1>Bring your website to life.</h1>
+                <p class="text-center">Web hosting is the easiest, most economical way to get your website connected to
+                    the Internet so you can start building it.</p>
+                <div class="row d-flex justify-content-center align-items-center p-3 g-col-2">
+                    <div class="card p-4 g-col-3" style="width: 18rem;">
+                        <div class="card-body d-flex flex-column justify-content-center align-items-center p-3">
+                            <h4 class="card-title">Basic</h4>
+                            <h6 class="card-subtitle mb-2 text-body-secondary">Made for a simple website or blog</h6>
+                            <p class="card-text">Save 75%</p>
+                            <h1>$2.95<span>/mo*</span></h1>
+                            <p class="renews">Renews at $11.99/mo</p>
+                            <button class="btn-select"><a href="#" class="card-link">Select</a></button>
+                            <div class="details d-flex justify-content-center align-items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px"
+                                    viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                                    <path
+                                        d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z" />
+                                </svg>
+                                <p><span>10</span> Websites</p>
+                            </div>
+                            <div class="details d-flex justify-content-center align-items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px"
+                                    viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                                    <path
+                                        d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z" />
+                                </svg>
+                                <p><span>10 GB</span> SSD Storage</p>
+                            </div>
+                            <div class="details d-flex justify-content-center align-items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px"
+                                    viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                                    <path
+                                        d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z" />
+                                </svg>
+                                <p><span>100</span> Concurrent Visitors</p>
+                            </div>
+                            <div class="details d-flex justify-content-center align-items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px"
+                                    viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                                    <path
+                                        d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z" />
+                                </svg>
+                                <p>Ideal for<span>40k</span> visits/mo</p>
+                            </div>
+                            <div class="details d-flex justify-content-center align-items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px"
+                                    viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                                    <path
+                                        d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z" />
+                                </svg>
+                                <p><span>Free SSL</span> - Let's Encrypt</p>
+                            </div>
+                            <div class="details d-flex justify-content-center align-items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px"
+                                    viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                                    <path
+                                        d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z" />
+                                </svg>
+                                <p><span>DDos</span> Protection</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card p-4 g-col-3" style="width: 18rem;">
+                        <div class="card-body d-flex flex-column justify-content-center align-items-center p-3">
+                            <h4 class="card-title">Choice Plus</h4>
+                            <h6 class="card-subtitle mb-2 text-body-secondary">Ideal for multiple sites needing storage,
+                                security, + backups</h6>
+                            <p class="card-text">Save 75%</p>
+                            <h1>$5.45<span>/mo*</span></h1>
+                            <p class="renews">Renews at $21.99/mo</p>
+                            <button class="btn-select"><a href="#" class="card-link">Select</a></button>
+                            <div class="details d-flex justify-content-center align-items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px"
+                                    viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                                    <path
+                                        d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z" />
+                                </svg>
+                                <p><span>50</span> Websites</p>
+                            </div>
+                            <div class="details d-flex justify-content-center align-items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px"
+                                    viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                                    <path
+                                        d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z" />
+                                </svg>
+                                <p><span>50 GB</span> SSD Storage</p>
+                            </div>
+                            <div class="details d-flex justify-content-center align-items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px"
+                                    viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                                    <path
+                                        d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z" />
+                                </svg>
+                                <p><span>500</span> Concurrent Visitors</p>
+                            </div>
+                            <div class="details d-flex justify-content-center align-items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px"
+                                    viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                                    <path
+                                        d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z" />
+                                </svg>
+                                <p>Ideal for<span>200k</span> visits/mo</p>
+                            </div>
+                            <div class="details d-flex justify-content-center align-items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px"
+                                    viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                                    <path
+                                        d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z" />
+                                </svg>
+                                <p><span>Free SSL</span> - Let's Encrypt</p>
+                            </div>
+                            <div class="details d-flex justify-content-center align-items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px"
+                                    viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                                    <path
+                                        d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z" />
+                                </svg>
+                                <p><span>DDos</span> Protection</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card p-4 g-col-3" style="width: 18rem;">
+                        <div class="card-body d-flex flex-column justify-content-center align-items-center p-3">
+                            <h4 class="card-title">ONLINE STORE</h4>
+                            <h6 class="card-subtitle mb-2 text-body-secondary">Great for all online selling, eCommerce
+                                tools built-in</h6>
+                            <p class="card-text">Save 63%</p>
+                            <h1>$9.95<span>/mo*</span></h1>
+                            <p class="renews">Renews at $26.99/mo</p>
+                            <button class="btn-select"><a href="#" class="card-link">Select</a></button>
+                            <div class="details d-flex justify-content-center align-items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px"
+                                    viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                                    <path
+                                        d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z" />
+                                </svg>
+                                <p><span>50</span> Websites</p>
+                            </div>
+                            <div class="details d-flex justify-content-center align-items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px"
+                                    viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                                    <path
+                                        d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z" />
+                                </svg>
+                                <p><span>50 GB</span> SSD Storage</p>
+                            </div>
+                            <div class="details d-flex justify-content-center align-items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px"
+                                    viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                                    <path
+                                        d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z" />
+                                </svg>
+                                <p><span>500</span> Concurrent Visitors</p>
+                            </div>
+                            <div class="details d-flex justify-content-center align-items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px"
+                                    viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                                    <path
+                                        d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z" />
+                                </svg>
+                                <p>Ideal for<span>200k</span> visits/mo</p>
+                            </div>
+                            <div class="details d-flex justify-content-center align-items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px"
+                                    viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                                    <path
+                                        d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z" />
+                                </svg>
+                                <p><span>Free SSL</span> - Let's Encrypt</p>
+                            </div>
+                            <div class="details d-flex justify-content-center align-items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px"
+                                    viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                                    <path
+                                        d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z" />
+                                </svg>
+                                <p><span>DDos</span> Protection</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card p-4 g-col-3" style="width: 18rem;">
+                        <div class="card-body d-flex flex-column justify-content-center align-items-center p-3">
+                            <h4 class="card-title">PRO</h4>
+                            <h6 class="card-subtitle mb-2 text-body-secondary">Perfect for high traffic, advanced
+                                storage, security, + backups</h6>
+                            <p class="card-text">Save 52%</p>
+                            <h1>$13.95<span>/mo*</span></h1>
+                            <p class="renews">Renews at $28.99/mo</p>
+                            <button class="btn-select"><a href="#" class="card-link">Select</a></button>
+                            <div class="details d-flex justify-content-center align-items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px"
+                                    viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                                    <path
+                                        d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z" />
+                                </svg>
+                                <p><span>100</span> Websites</p>
+                            </div>
+                            <div class="details d-flex justify-content-center align-items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px"
+                                    viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                                    <path
+                                        d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z" />
+                                </svg>
+                                <p><span>100 GB</span> SSD Storage</p>
+                            </div>
+                            <div class="details d-flex justify-content-center align-items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px"
+                                    viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                                    <path
+                                        d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z" />
+                                </svg>
+                                <p><span>1000</span> Concurrent Visitors</p>
+                            </div>
+                            <div class="details d-flex justify-content-center align-items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px"
+                                    viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                                    <path
+                                        d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z" />
+                                </svg>
+                                <p>Ideal for<span>400k</span> visits/mo</p>
+                            </div>
+                            <div class="details d-flex justify-content-center align-items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px"
+                                    viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                                    <path
+                                        d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z" />
+                                </svg>
+                                <p><span>Free SSL</span> - Let's Encrypt</p>
+                            </div>
+                            <div class="details d-flex justify-content-center align-items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px"
+                                    viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                                    <path
+                                        d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z" />
+                                </svg>
+                                <p><span>DDos</span> Protection</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+
+            <section class="blue-cloud">
+                <div class="row d-flex justify-content-center align-items-center h-100">
+                    <div class="cloud-box">
+                        <h6>BLUEHOST CLOUD</h6>
+                        <h2>World-class speed for your WordPress websites.</h2>
+                        <p>Managed cloud hosting with unmatched, 100% network uptime and top-tier speed.</p>
+                        <button class="btn btn-outline-main"><a href="#">Learn More <svg
+                                    xmlns="http://www.w3.org/2000/svg" height="14" width="14"
+                                    viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                                    <path fill="#ffffff"
+                                        d="M334.5 414c8.8 3.8 19 2 26-4.6l144-136c4.8-4.5 7.5-10.8 7.5-17.4s-2.7-12.9-7.5-17.4l-144-136c-7-6.6-17.2-8.4-26-4.6s-14.5 12.5-14.5 22l0 72L32 192c-17.7 0-32 14.3-32 32l0 64c0 17.7 14.3 32 32 32l288 0 0 72c0 9.6 5.7 18.2 14.5 22z" />
+                                </svg></a>
+                        </button>
+                    </div>
+                </div>
+            </section>
+
+            <section class="iframe-ai">
+                <h6>AI WEBSITE TOOLS</h6>
+                <h1>A custom site started for you,
+                    courtesy of AI.</h1>
+                <div class="ratio ratio-16x9">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/vJmqb_ajDDA?si=wUwk0W9vqVBuF4kx"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </section>
+
+            <section class="carousel-your-plan">
+                <h1>What’s included with your plan?
+                    Bluehost WonderSuite</h1>
+
+                <div id="carouselExampleIndicators" class="carousel slide vh-100">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                            aria-label="Slide 4"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
+                            aria-label="Slide 5"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5"
+                            aria-label="Slide 6"></button>
+                    </div>
+
+                    <div class="carousel-inner h-100  text-white">
+                        <div class="carousel-item active h-100"
+                            style="background-image: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)), url(./img/main-sections/section1.png);">
+                            <div class="carousel-caption h-100 d-flex justify-content-center align-items-center">
+                                <div class="carousel-box">
+                                    <h4>Bluehost WonderSuite</h4>
+                                    <h1>WordPress made wonderful with AI.</h1>
+                                    <p>With our smart AI tools, you can onboard in minutes and get a custom, ready-to-go
+                                        site.</p>
+                                    <button class="btn btn-outline-main"><a href="#">More</a></button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item h-100"
+                            style="background-image: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)), url(./img/main-sections/section2.jpg);">
+                            <div class="carousel-caption h-100 d-flex justify-content-center align-items-center">
+                                <div class="carousel-box">
+                                    <h4>User Experience & Performance</h4>
+                                    <h1>Faster experiences for all.</h1>
+                                    <p>Bluehost is designed to run better, load faster, and perform stronger so you can
+                                        achieve greater results.</p>
+                                    <button class="btn btn-outline-main"><a href="#">More</a></button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item h-100"
+                            style="background-image: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)), url(./img/main-sections/section3.jpg);">
+                            <div class="carousel-caption h-100 d-flex justify-content-center align-items-center">
+                                <div class="carousel-box">
+                                    <h4>HOSTING Security Features</h4>
+                                    <h1>Streamlined safety you can feel.</h1>
+                                    <p>Between data encryption. automatic backups, and malware scans, our web hosting
+                                        plans guarantee your protection.</p>
+                                    <button class="btn btn-outline-main"><a href="#">More</a></button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item h-100"
+                            style="background-image: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)), url(./img/main-sections/section4.png);">
+                            <div class="carousel-caption h-100 d-flex justify-content-center align-items-center">
+                                <div class="carousel-box">
+                                    <h4>Guided web hosting</h4>
+                                    <h1>Easy setup to set up your success.</h1>
+                                    <p>In a few simple steps, you can go from picking a plan to attracting visitors.
+                                        We’ll guide you every step of the way.</p>
+                                    <button class="btn btn-outline-main"><a href="#">More</a></button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item h-100"
+                            style="background-image: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)), url(./img/main-sections/section5.png);">
+                            <div class="carousel-caption h-100 d-flex justify-content-center align-items-center">
+                                <div class="carousel-box">
+                                    <h4>Partnered with WordPress</h4>
+                                    <h1>Recommended by WordPress.</h1>
+                                    <p>Bluehost and WordPress have worked closely since 2005 to create a hosting
+                                        platform ideal for WordPress websites.</p>
+                                    <button class="btn btn-outline-main"><a href="#">More</a></button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item h-100"
+                            style="background-image: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)), url(./img/main-sections/section6.jpeg);">
+                            <div class="carousel-caption h-100 d-flex justify-content-center align-items-center">
+                                <div class="carousel-box">
+                                    <h4>WordPress pre-installed</h4>
+                                    <h1>The latest WordPress updates, delivered.</h1>
+                                    <button class="btn btn-outline-main"><a href="#">More</a></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </section>
+
+            <section class="iframe-web-hosting">
+                <h6>What is web hosting?</h6>
+                <h1>Web hosting is perfect for getting started online.</h1>
+                <div class="ratio ratio-16x9">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/WcD96Pz_12k?si=KGgSrdu_xBZYUOZV"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </section>
+
+            <section class="web-hosting d-flex flex-column justify-content-center align-items-center p-4">
+                <h5>Beyond web hosting</h5>
+                <h1>Hosting that works as hard as you do.</h1>
+                <div class="row d-flex justify-content-center align-items-center p-3 g-col-2">
+                    <div class="card p-4 g-col-3" style="width: 18rem;">
+                        <div class="card-body">
+                            <h5 class="card-title">WordPress</h5>
+                            <p class="card-text-two">Unlock the limitless design freedom of WordPress with expert
+                                support.</p>
+                            <a href="#" class="card-link-two">Learn More <svg xmlns="http://www.w3.org/2000/svg"
+                                    height="14" width="14"
+                                    viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                                    <path fill="#6600ee"
+                                        d="M502.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-128-128c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L402.7 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l370.7 0-73.4 73.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l128-128z" />
+                                </svg></a>
+                        </div>
+                    </div>
+
+                    <div class="card p-4 g-col-3" style="width: 18rem;">
+                        <div class="card-body">
+                            <h5 class="card-title">Online Store</h5>
+                            <p class="card-text-two">Everything you need to start selling online with plans built for
+                                eCommerce.</p>
+                            <a href="#" class="card-link-two">Learn More <svg xmlns="http://www.w3.org/2000/svg"
+                                    height="14" width="14"
+                                    viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                                    <path fill="#6600ee"
+                                        d="M502.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-128-128c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L402.7 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l370.7 0-73.4 73.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l128-128z" />
+                                </svg></a>
+                        </div>
+                    </div>
+
+                    <div class="card p-4 g-col-3" style="width: 18rem;">
+                        <div class="card-body">
+                            <h5 class="card-title">VPS</h5>
+                            <p class="card-text-two">Gain more control and flexibility with a Virtual Private Server.
+                            </p>
+                            <a href="#" class="card-link-two">Learn More <svg xmlns="http://www.w3.org/2000/svg"
+                                    height="14" width="14"
+                                    viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                                    <path fill="#6600ee"
+                                        d="M502.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-128-128c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L402.7 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l370.7 0-73.4 73.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l128-128z" />
+                                </svg></a>
+                        </div>
+                    </div>
+
+                    <div class="card d-flex flex-column justify-content-center align-items-center p-4 g-col-3"
+                        style="width: 18rem;">
+                        <div class="card-body">
+                            <h5 class="card-title">Dedicated</h5>
+                            <p class="card-text-two">Give your high-value website more power and security.</p>
+                            <a href="#" class="card-link-two">Learn More <svg xmlns="http://www.w3.org/2000/svg"
+                                    height="14" width="14"
+                                    viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                                    <path fill="#6600ee"
+                                        d="M502.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-128-128c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L402.7 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l370.7 0-73.4 73.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l128-128z" />
+                                </svg></a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="marketplace-expert">
+                <div class="row d-flex justify-content-center align-items-center ">
+                    <div class="card-marketplace h-100 vh-100 " style="width: 18rem;">
+                        <div class="card-body-market">
+                            <h4>Online store + Marketplace</h4>
+                            <h2>Take your store online in minutes.</h2>
+                            <button class="btn-marketplace"><a href="#">Get It</a></button>
+                        </div>
+                        <img src="./img/main-sections/marketplace.jpg" class="card-img-top" alt="...">
+                    </div>
+
+                    <div class="card-expert h-100 vh-100" style="width: 18rem;">
+                        <div class="card-body-market">
+                            <h4>EXPERT Guidance</h4>
+                            <h2>Get expert help to find the right product.</h2>
+                            <p>Call<a href="#"> 844-735-6822 </a><br> or <a href="#"> Chat Now.</a> </p>
+                        </div>
+                        <img src="./img/main-sections/section8.png" class="card-img-top" alt="...">
+                    </div>
+                </div>
+
+            </section>
+
+            <section class="Faqs-web-hosting">
+                <h1>FAQ’s about Web Hosting</h1>
+                <div class="faqs d-flex flex-column justify-content-center align-items-center">
+                    <div class="row d-flex justify-content-center align-items-center">
+                        <div class="test">
+
+                        </div>
+                        <h2 class="quastion">What is Shared Web Hosting?</h2>
+                        <p class="answer">Shared Web Hosting is a very popular hosting option because it provides an
+                            affordable way to get your website online. Shared Web Hosting works by allowing multiple
+                            users to share space on a single server. This cost-effective web hosting option is ideal for
+                            small to medium websites.</p>
+                    </div>
+
+                    <div class="row d-flex justify-content-center align-items-center">
+                        <div class="test">
+
+                        </div>
+                        <h2 class="quastion">How do I get started with Web Hosting?</h2>
+                        <p class="answer">Bluehost simplifies getting your website online. You can browse through
+                            various hosting options above to find the one that fits your needs. Once you’ve found the
+                            right plan, you'll need to choose the length of your subscription. Although it's possible to
+                            pay for our web hosting services monthly, opting for longer-term plans is more
+                            cost-effective and provides better value. If you need help picking the right hosting plan
+                            for your website, you can contact us anytime. Once you’ve found the perfect plan, we’ll
+                            automatically install WordPress for you, saving you time and money.</p>
+                    </div>
+
+                    <div class="row d-flex justify-content-center align-items-center">
+                        <div class="test">
+
+                        </div>
+                        <h2 class="quastion">What are some Web Hosting benefits?</h2>
+                        <p class="answer">The amount of traffic a Shared Web Hosting plan can handle depends on the
+                            amount of resources and bandwidth your website requires. Bluehost offers different web
+                            hosting plans with varying amounts of resources and storage to handle different levels of
+                            traffic. If your website starts to outgrow your plan, you can always upgrade to a more
+                            powerful hosting option.</p>
+                    </div>
+
+                    <div class="row d-flex justify-content-center align-items-center">
+                        <div class="test">
+
+                        </div>
+                        <h2 class="quastion">What is Shared Web Hosting?</h2>
+                        <p class="answer">Web hosting with Bluehost provides a secure, accessible space for your website
+                            to live online. Benefits include increased site performance, reliability, and security. Our
+                            web hosting platform is managed, which means users don’t have to worry about server
+                            management and platform patches. When you purchase a Bluehost Web Hosting package it also
+                            includes an <a href="#">SSL certificate</a>, <a href="#">domain name</a> and more!</p>
+                    </div>
+
+                    <div class="row d-flex justify-content-center align-items-center">
+                        <div class="test">
+
+                        </div>
+                        <h2 class="quastion">What exactly is “shared” in Shared Web Hosting?</h2>
+                        <p class="answer">Web hosting allows multiple website owners to share space on a single server.
+                            This means that the server's resources (RAM, CPU, etc.) are shared among all the websites
+                            hosted on that server. This makes it an affordable option for users who don't require a lot
+                            of resources. For larger, more resource-intense websites, it may be better to go with <a
+                                href="#">VPS hosting</a> or a <a href="#">dedicated hosting plan</a>.</p>
+                    </div>
+
+                    <div class="row d-flex justify-content-center align-items-center">
+                        <div class="test">
+
+                        </div>
+                        <h2 class="quastion">What is the difference between Web Hosting vs WordPress Hosting?</h2>
+                        <p class="answer">The Web Hosting plans on this page are the same as those on our WordPress
+                            Hosting page. At Bluehost, <a href="#">WordPress Hosting</a> and Shared Web Hosting are the
+                            same thing.</p>
+                    </div>
+
+                    <div class="row d-flex justify-content-center align-items-center">
+                        <div class="test">
+
+                        </div>
+                        <h2 class="quastion">What is the difference between Web vs VPS Hosting?</h2>
+                        <p class="answer">With a Web Hosting plan, your website shares a server with other sites, which
+                            means you own a portion of the server's resources like RAM and CPU, but these aren't
+                            exclusively yours. Opting for <a href="#">Virtual Private Server (VPS) Hosting</a>, however,
+                            gives you more room and bandwidth to handle increased website visitors. Unlike shared
+                            hosting, VPS lets you scale your site as it gets bigger, offering the flexibility to grow
+                            with your needs. Plus, VPS hosting puts more control in your hands, letting you tailor your
+                            server configuration to your preferences. Discover the <a href="#">differences between VPS
+                                and Shared Web Hosting</a> for more insights.</p>
+                    </div>
+
+                    <div class="row d-flex justify-content-center align-items-center">
+                        <div class="test">
+
+                        </div>
+                        <h2 class="quastion">Is Web Hosting safe?</h2>
+                        <p class="answer">Yes, Shared Web Hosting with a reputable company like Bluehost is safe. Not
+                            all shared hosting services are created equal. The nature of sharing a server with other
+                            websites can introduce a small risk of one site potentially impacting others. This is why
+                            it’s important to select a trustworthy web hosting provider.</p>
+                    </div>
+
+                    <div class="row d-flex justify-content-center align-items-center">
+                        <div class="test">
+
+                        </div>
+                        <h2 class="quastion">Is Web Hosting good for WordPress?</h2>
+                        <p class="answer">Yes, shared web hosting is a great option for WordPress websites. In fact, we
+                            offer automatic WordPress installation and updates with our web hosting plans.</p>
+                    </div>
+
+                    <div class="row d-flex justify-content-center align-items-center">
+                        <div class="test">
+
+                        </div>
+                        <h2 class="quastion">How much traffic can Web Hosting handle?</h2>
+                        <p class="answer">The amount of traffic a Shared Web Hosting plan can handle depends on the
+                            amount of resources and bandwidth your website requires. Bluehost offers different web
+                            hosting plans with varying amounts of resources and storage to handle different levels of
+                            traffic. If your website starts to outgrow your plan, you can always upgrade to a more
+                            powerful hosting option.</p>
+                    </div>
+
+                    <div class="row d-flex justify-content-center align-items-center">
+                        <div class="test">
+
+                        </div>
+                        <h2 class="quastion">What’s the difference between Web Hosting and domains?</h2>
+                        <p class="answer">Web hosting stores your website's files on a server, making it accessible
+                            online, while a domain is your website's address on the internet. While it’s not required to
+                            buy web hosting and domains together, it does make managing your website easier.</p>
+                    </div>
+
+                    <div class="row d-flex justify-content-center align-items-center">
+                        <div class="test">
+
+                        </div>
+                        <h2 class="quastion">How can I buy a domain with my web hosting plan?</h2>
+                        <p class="answer">When you purchase a web hosting plan with a provider like Bluehost, you may be
+                            eligible for a free domain name. If you already have a domain, you can easily transfer it to
+                            your new hosting provider. You can search for an available <a href="#">domain name</a>
+                            quickly and easily.</p>
+                    </div>
+
+                    <div class="row d-flex justify-content-center align-items-center">
+                        <div class="test">
+
+                        </div>
+                        <h2 class="quastion">Can I get a professional business email account with a web hosting plan?
+                        </h2>
+                        <p class="answer">Yes, most web hosting plans come with the ability to create email accounts
+                            using your domain name. Learn more about our <a href="#">professional email plans</a>, as
+                            well as the <a href="#">Google Workspace plans</a> available through Bluehost.</p>
+                    </div>
+
+                    <div class="row d-flex justify-content-center align-items-center">
+                        <div class="test">
+
+                        </div>
+                        <h2 class="quastion">Can I have an eCommerce store on a web hosting plan?</h2>
+                        <p class="answer">Yes, you can definitely have an eCommerce store on a web hosting plan. You can
+                            also opt for an eCommerce-specific hosting plan with Bluehost's <a href="#">WooCommerce
+                                hosting</a>. This will ensure your online store runs smoothly and securely.</p>
+                    </div>
+
+                    <div class="row d-flex justify-content-center align-items-center">
+                        <div class="test">
+
+                        </div>
+                        <h2 class="quastion">What is Managed Cloud Hosting for WordPress?</h2>
+                        <p class="answer">The <a href="#">Bluehost Cloud is an all-in-one Managed WordPress platform</a>
+                            built for lightning-fast page load times and 100% network uptime, backed by multi-regional
+                            fault tolerance that is scalable to the demands of your, or your clients', websites.
+                            Bluehost has partnered with some of the creators of WordPress to provide the world’s best
+                            Managed WordPress platform.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="contact">
+                <h1>Contact</h1>
+                <h4>You can contacts with us by many ways, such as location and more.</h4>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d53918.75689995756!2d35.0718497!3d32.3676297!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2s!4v1723478696981!5m2!1sen!2s"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <div class="contact-info">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="address d-flex gap-4 align-items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="25" width="20"
+                                    viewBox="0 0 384 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                                    <path fill="#6600ee"
+                                        d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z" />
+                                </svg>
+                                <div class="address-info">
+                                    <h3>Location : </h3>
+                                    <address>A 108 Adam Street New Yourk, NY 535022</address>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="email d-flex gap-4 align-items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="25" width="25"
+                                    viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                                    <path fill="#6600ee"
+                                        d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48L48 64zM0 176L0 384c0 35.3 28.7 64 64 64l384 0c35.3 0 64-28.7 64-64l0-208L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z" />
+                                </svg>
+                                <div class="email-info">
+                                    <h3>Email : </h3>
+                                    <a href="#">bluehoste-eccomerce@outlook.com</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="phone d-flex gap-4 align-items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="25" width="25"
+                                    viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                                    <path fill="#6600ee"
+                                        d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z" />
+                                </svg>
+                                <div class="phone-info">
+                                    <h3>Phone : </h3>
+                                    <a href="#">880-667-0024</a><br>
+                                    <a href="#">057-887-0192</a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <form class="d-flex flex-column gap-4">
+                    <div class="groups d-flex gap-4">
+                        <div class="name form-floating w-100">
+                            <input type="text" class="form-control" id="name" />
+                            <label for="name">Your Name</label>
+                        </div>
+
+                        <div class="email form-floating w-100">
+                            <input type="email" class="form-control" id="email" />
+                            <label for="email">Your Email</label>
+                        </div>
+                    </div>
+
+                    <div class="message form-floating w-100">
+                        <textarea class="form-control" id="message"></textarea>
+                        <label for="message">Your Message</label>
+                    </div>
+
+                    <button type="submit" class="btn btn-outline-main w-100">Send Message</button>
+                </form>
+            </section>
+
+            <section class="sign-in">
+                <h1>Sign In</h1>
+                <form class="row g-3 needs-validation" novalidate>
+                    <div class="col-md-4">
+                        <label for="validationCustom01" class="form-label">First name</label>
+                        <input type="text" class="form-control" id="validationCustom01" required>
+                        <div class="valid-feedback">
+                            Looks good!
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <label for="validationCustom02" class="form-label">Last name</label>
+                        <input type="text" class="form-control" id="validationCustom02" required>
+                        <div class="valid-feedback">
+                            Looks good!
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <label for="validationCustomUsername" class="form-label">Username</label>
+                        <div class="input-group has-validation">
+                            <span class="input-group-text" id="inputGroupPrepend">@</span>
+                            <input type="text" class="form-control" id="validationCustomUsername"
+                                aria-describedby="inputGroupPrepend" required>
+                            <div class="invalid-feedback">
+                                Please choose a username.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="validationCustom03" class="form-label">City</label>
+                        <input type="text" class="form-control" id="validationCustom03" required>
+                        <div class="invalid-feedback">
+                            Please provide a valid city.
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <label for="validationCustom04" class="form-label">State</label>
+                        <select class="form-select" id="validationCustom04" required>
+                            <option selected disabled value="">Choose...</option>
+                            <option value="palestine">Palestine</option>
+                            <option value="jordan">Jordan</option>
+                            <option value="lebanon">Lebanon</option>
+                            <option value="usa">USA</option>
+                            <option value="england">England</option>
+                            <option value="spain">Spain</option>
+                            <option value="portugal">Portugal</option>
+                            <option value="ksa">KSA</option>
+                            <option value="uae">UAE</option>
+                            <option value="netherland">Netherland</option>
+                        </select>
+                        <div class="invalid-feedback">
+                            Please select a valid state.
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <label for="validationCustom05" class="form-label">Zip</label>
+                        <input type="text" class="form-control" id="validationCustom05" required>
+                        <div class="invalid-feedback">
+                            Please provide a valid zip.
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                            <label class="form-check-label" for="invalidCheck">
+                                Agree to terms and conditions
+                            </label>
+                            <div class="invalid-feedback">
+                                You must agree before submitting.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <button class="btn btn-primary" type="submit">Sign in</button>
+                    </div>
+                </form>
+
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row d-flex flex-wrap gap-4">
+                <div class="footer-start">
+                    <div class="logo-footer">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="20" width="20"
+                            viewBox="0 0 384 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                            <path fill="#000"
+                                d="M14 95.8C14 42.9 56.9 0 109.8 0H274.2C327.1 0 370 42.9 370 95.8C370 129.3 352.8 158.8 326.7 175.9C352.8 193 370 222.5 370 256C370 308.9 327.1 351.8 274.2 351.8H272.1C247.3 351.8 224.7 342.4 207.7 326.9V415.2C207.7 468.8 163.7 512 110.3 512C57.5 512 14 469.2 14 416.2C14 382.7 31.2 353.2 57.2 336.1C31.2 319 14 289.5 14 256C14 222.5 31.2 193 57.2 175.9C31.2 158.8 14 129.3 14 95.8zM176.3 191.6H109.8C74.2 191.6 45.4 220.4 45.4 256C45.4 291.4 74 320.2 109.4 320.4C109.5 320.4 109.7 320.4 109.8 320.4H176.3V191.6zM207.7 256C207.7 291.6 236.5 320.4 272.1 320.4H274.2C309.7 320.4 338.6 291.6 338.6 256C338.6 220.4 309.7 191.6 274.2 191.6H272.1C236.5 191.6 207.7 220.4 207.7 256zM109.8 351.8C109.7 351.8 109.5 351.8 109.4 351.8C74 352 45.4 380.8 45.4 416.2C45.4 451.7 74.6 480.6 110.3 480.6C146.6 480.6 176.3 451.2 176.3 415.2V351.8H109.8zM109.8 31.4C74.2 31.4 45.4 60.2 45.4 95.8C45.4 131.4 74.2 160.2 109.8 160.2H176.3V31.4H109.8zM207.7 160.2H274.2C309.7 160.2 338.6 131.4 338.6 95.8C338.6 60.2 309.7 31.4 274.2 31.4H207.7V160.2z" />
+                        </svg>
+                        <a class="navbar-brand" href="#">Bluehost</a>
+                    </div>
+                    <p>© 2002-2024 bluehost inc. all rights reserved.</p>
+                    <div class="icons">
+                        <a href="#">
+                            <img src="./img/footer/facebook-logo.svg" />
+                        </a>
+                        <a href="#">
+                            <img src="./img/footer/instagram-logo.svg" />
+                        </a>
+                        <a href="#">
+                            <img src="./img/footer/linkedin-logo.svg" />
+                        </a>
+                        <a href="#">
+                            <img src="./img/footer/Twitter-logo.svg" />
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-end">
+                    <div class="row">
+                        <div class="footer-item">
+                            <h2>Products</h2>
+                            <nav>
+                                <ul>
+                                    <li>
+                                        <a href="#">Web Hosting</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">WordPress Hosting</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Cloud Hosting</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Online Store</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">VPS Hosting</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Dedicated Hosting</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Professional Email</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="footer-item">
+                            <h2>Programs</h2>
+                            <nav>
+                                <ul>
+                                    <li>
+                                        <a href="#">Affiliates</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">WordPress</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Agencies</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Marketing Services</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Web Design</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Digital Marketing</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">WordPress Guide</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Pro Design Live</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="footer-item">
+                            <h2>Support</h2>
+                            <nav>
+                                <ul>
+                                    <li>
+                                        <a href="#">Knowledge Base</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Accessibility</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Cookie Settings</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Report Abuse</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="footer-item">
+                            <h2>Company</h2>
+                            <nav>
+                                <ul>
+                                    <li>
+                                        <a href="#">About</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Careers</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Contact</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Terms of Service</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Privacy</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Academy</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Blog</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Resource Center</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Sitemap</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="./main.js"></script>
+</body>
+
+</html>
