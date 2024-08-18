@@ -1,3 +1,4 @@
+
 :root {
     --mainColor: #6600ee;
 }
@@ -36,29 +37,11 @@ nav {
     transition: 0.4s;
 }
 
-.light {
-    background-color: #fff;
-    font-style: italic;
-    color: #000;
-    transition: 0.4s;
-}
-
-.darkBtn {
-    background-color: #000;
-    color: #fff;
+.changeModeBtn {
     padding: 7px 7px;
     font-weight: 500;
     border-radius: 10px;
     z-index: 9999;
-}
-
-.lightBtn {
-    background-color: #fff;
-    color: #000;
-    padding: 7px 7px;
-    font-weight: 500;
-    border-radius: 10px;
-    z-index: 99999;
 }
 
 .dark-mode {
@@ -332,7 +315,7 @@ a {
     gap: 50px;
 }
 
-.Faqs-web-hosting h1 {
+.faqs-web-hosting h1 {
     font-style: italic;
     font-weight: 900;
     margin-top: 45px;
@@ -340,17 +323,25 @@ a {
     text-align: center;
 }
 
-.quastion {
-    width: 50%;
-    margin-top: 15px;
+.accordion-button {
+    font-size: 25px;
+    font-weight: 800;
+    width: 100%;
+}
+
+.accordion-body {
+    background-color: rgba(0, 0, 0, 0.125)
 }
 
 .answer {
-    width: 50%;
-    margin-top: 15px;
+    width: 100%;
 }
 
-.faqs .row .answer a {
+.accordion-body p {
+    font-size: 20px;
+}
+
+.answer a {
     color: #007bff !important;
     text-decoration: underline;
 }
@@ -475,6 +466,7 @@ a {
 .footer-end .row {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
     align-items: flex-start;
     gap: 35px;
 }
@@ -484,12 +476,14 @@ a {
     flex-wrap: wrap;
     flex-direction: column;
     gap: 20px;
+    width: 20%;
 }
 
 .footer-end .footer-item ul {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
+    text-align: left;
     gap: 10px;
 }
 
@@ -497,7 +491,7 @@ a {
     flex-grow: 1;
 }
 
-@media (max-width:700px) {
+@media (max-width:800px) {
     .footer-start {
         text-align: center;
         align-items: center;
@@ -506,6 +500,14 @@ a {
     .footer-end {
         text-align: center;
         align-items: center;
+    }
+}
+
+@media (max-width:370px) {
+    .footer-end .footer-item ul {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
     }
 }
 

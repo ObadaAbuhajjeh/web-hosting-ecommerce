@@ -9,21 +9,14 @@ window.onscroll = function () {
 }
 
 var body = document.querySelector("body");
-var darkBtn = document.querySelector(".darkBtn");
-var lightBtn = document.querySelector(".lightBtn");
+var changeModeBtn = document.querySelector(".changeModeBtn");
 
-function darkMode() {
-    body.classList.add("dark");
-    body.classList.remove("light");
+function changeMode() {
+    body.classList.toggle("dark");
 }
 
-function lightMode() {
-    body.classList.add("light");
-    body.classList.remove('dark');
-}
+changeModeBtn.onclick = changeMode;
 
-darkBtn.onclick = darkMode;
-lightBtn.onclick = lightMode;
 
 
 
