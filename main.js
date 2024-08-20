@@ -28,9 +28,9 @@ async function getNews() {
     } finally {
         document.querySelector(".overlay").classList.add("d-none");
     }
-
 }
 getNews();
+
 
 
 window.onscroll = function () {
